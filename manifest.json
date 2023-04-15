@@ -1,0 +1,21 @@
+{
+  "name": "Показ реги и кармы в комментах на ВЦ",
+  "description": "Экстепншен наговнокожен, можеть течь память, прав я добавил от балды, ревью код вызовет инфаркт у джсеров)",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["alarms", "notifications", "storage", "activeTab", "tabs", "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Drink Water Event",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "drink_water16.png"
+  },
+  "host_permissions": [
+    "https://vc.ru/*"
+  ]
+}
